@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section"
 import { PlacesSection } from "@/components/places-section"
 import { ThingsToDo } from "@/components/things-to-do"
 import { AttractionsSection } from "@/components/attractions-section"
+import Script from "next/script";
 
 const malls = [
   {
@@ -83,6 +84,7 @@ const restaurants = [
 
 export default function Home() {
   return (
+    <>
       <head>
       <Script
         strategy='lazyOnload'
@@ -110,6 +112,7 @@ export default function Home() {
         <AttractionsSection />
       </div>
     </main>
+    </>
   )
 }
 
