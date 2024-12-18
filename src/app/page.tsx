@@ -4,44 +4,6 @@ import { ThingsToDo } from "@/components/things-to-do"
 import { AttractionsSection } from "@/components/attractions-section"
 import Script from "next/script";
 
-const malls = [
-  {
-    id: '1',
-    image: '/dubai-mall.jpg',
-    title: 'The Dubai Mall',
-    location: 'Downtown Dubai',
-    priceRange: '$$$',
-    category: 'Lifestyle Malls',
-    rating: 9.12,
-    isGem: true,
-    isBest100: true,
-    isOpen: true
-  },
-  {
-    id: '2',
-    image: '/dubai-hills-mall.jpg',
-    title: 'Dubai Hills Mall',
-    location: 'Dubai Hills Estate',
-    priceRange: '$$$',
-    category: 'Lifestyle Malls',
-    rating: 9.02,
-    isGem: true,
-    isBest100: true,
-    isOpen: true
-  },
-  {
-    id: '3',
-    image: '/chinatown-mall.jpg',
-    title: 'Chinatown Dubai Mall',
-    location: 'Downtown Dubai',
-    priceRange: '$$$',
-    category: 'Themed Malls',
-    rating: 8.95,
-    isGem: false,
-    isBest100: true,
-    isOpen: true
-  }
-]
 
 const restaurants = [
   {
