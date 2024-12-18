@@ -1,4 +1,3 @@
-import { SiteHeader } from "@/components/site-header"
 import { HeroSection } from "@/components/hero-section"
 import { PlacesSection } from "@/components/places-section"
 import { ThingsToDo } from "@/components/things-to-do"
@@ -103,10 +102,8 @@ export default function Home() {
       </Script>
       </head>
     <main className="min-h-screen">
-      {/* <SiteHeader /> */}
       <HeroSection />
       <div className="bg-white">
-        {/* <PlacesSection title="Shop at the Best Malls" places={malls} /> */}
         <PlacesSection title="Award Winning Restaurants" places={restaurants} />
         <ThingsToDo />
         <AttractionsSection />
