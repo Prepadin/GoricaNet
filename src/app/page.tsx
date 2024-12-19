@@ -19,7 +19,7 @@ const restaurants = [
   },
   {
     id: '2',
-    image: '/calipso2.jpg',
+    image: '/calipso1.jpg',
     title: 'Restavracija Calypso',
     location: 'Kidričeva ulica 7, Nova Gorica',
     priceRange: '$$$$',
