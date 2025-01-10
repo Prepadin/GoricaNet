@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { PlaceCard } from './place-card'
@@ -20,6 +22,17 @@ interface PlacesSectionProps {
 }
 
 export function PlacesSection({ title, places }: PlacesSectionProps) {
+  const scroll = (direction: 'left' | 'right') => {
+    const container = document.getElementById('places-container');
+    if (container) {
+      const scrollAmount = 300; // Adjust this value based on your needs
+      container.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="py-8 px-1 sm:px-4 lg:px-28">
       <div className="container">
@@ -40,6 +53,7 @@ export function PlacesSection({ title, places }: PlacesSectionProps) {
                 variant="outline"
                 size="icon"
                 className="rounded-full"
+                onClick={() => scroll('left')}
               >
                 <ChevronLeft className="h-4 w-4" />
               </Button>
@@ -47,6 +61,7 @@ export function PlacesSection({ title, places }: PlacesSectionProps) {
                 variant="outline"
                 size="icon"
                 className="rounded-full"
+                onClick={() => scroll('right')}
               >
                 <ChevronRight className="h-4 w-4" />
               </Button>
@@ -54,10 +69,14 @@ export function PlacesSection({ title, places }: PlacesSectionProps) {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {places.map((place) => (
-            <PlaceCard key={place.id} {...place} />
-          ))}
+        <div className="overflow-hidden scrollbar-hide" id="places-container">
+          <div className="flex gap-6">
+            {places.map((place) => (
+              <div className="min-w-[490px]" key={place.id}>
+                <PlaceCard {...place} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

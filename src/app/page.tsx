@@ -40,6 +40,30 @@ const restaurants = [
     isGem: true,
     isBest100: true,
     isOpen: true
+  },
+  {
+    id: '4',
+    image: '/dam2.jpg',
+    title: 'Dam',
+    location: 'Vinka Vodopivca 24, Nova Gorica',
+    priceRange: '$$$',
+    category: 'Mediterranean Cuisine',
+    rating: 9.28,
+    isGem: true,
+    isBest100: true,
+    isOpen: true
+  },
+  {
+    id: '5',
+    image: '/dam2.jpg',
+    title: 'Dam',
+    location: 'Vinka Vodopivca 24, Nova Gorica',
+    priceRange: '$$$',
+    category: 'Mediterranean Cuisine',
+    rating: 9.28,
+    isGem: true,
+    isBest100: true,
+    isOpen: true
   }
 ]
 
