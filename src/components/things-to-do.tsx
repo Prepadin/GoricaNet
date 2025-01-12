@@ -69,7 +69,7 @@ export function ThingsToDo() {
             </div>
             <h2 className="text-2xl font-bold">Best Things to Do in Nova Gorica</h2>
           </div>
-          <Link href="/see-all" className="text-sm font-medium hover:text-primary">
+          <Link href="#" className="text-sm font-medium hover:text-primary">
             See All
           </Link>
         </div>

@@ -97,7 +97,7 @@ export function AttractionsSection() {
           </div>
           
           <div className="flex items-center gap-4">
-            <Link href="/see-all" className="text-sm font-medium hover:text-primary">
+            <Link href="#" className="text-sm font-medium hover:text-primary">
               See All
             </Link>
             <div className="flex items-center gap-2">
